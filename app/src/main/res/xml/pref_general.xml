@@ -1,0 +1,29 @@
+<PreferenceScreen
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginTop="?attr/actionBarSize"
+    android:title="Weather Settings">
+
+    <!-- NOTE: EditTextPreference accepts EditText attributes. -->
+    <!-- NOTE: EditTextPreference's summary should be set to its value by the activity code. -->
+    <EditTextPreference
+        android:id="@+id/location_preference"
+        android:capitalize="words"
+        android:defaultValue="@string/pref_general_location_default"
+        android:inputType="numberDecimal"
+        android:key="@string/pref_general_location_key"
+        android:maxLines="1"
+        android:selectAllOnFocus="true"
+        android:singleLine="true"
+        android:title="@string/pref_general_location" />
+
+    <ListPreference
+        android:id="@+id/units_preference"
+        android:capitalize="words"
+        android:entries="@array/pref_units_names_list"
+        android:entryValues="@array/pref_units_values_list"
+        android:key="@string/pref_general_units_key"
+        android:title="@string/pref_general_units"
+        android:defaultValue="metric"/>
+
+</PreferenceScreen>
