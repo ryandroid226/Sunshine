@@ -36,7 +36,7 @@ public class MainActivity extends AppCompatActivity {
         });
     }
 
-    @Override
+    /*@Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
         getMenuInflater().inflate(R.menu.menu_main, menu);
@@ -51,7 +51,6 @@ public class MainActivity extends AppCompatActivity {
         int id = item.getItemId();
 
         //noinspection SimplifiableIfStatement
-        //noinspection SimplifiableIfStatement
         if (id == R.id.action_settings) {
             Intent forecastSettings = new Intent(MainActivity.this, ForecastSettingsActivity.class);
             startActivity(forecastSettings);
@@ -59,5 +58,5 @@ public class MainActivity extends AppCompatActivity {
         }
 
         return super.onOptionsItemSelected(item);
-    }
+    }*/
 }

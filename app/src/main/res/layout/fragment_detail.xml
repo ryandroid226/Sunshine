@@ -5,7 +5,8 @@
     android:id="@+id/activity_detail"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.android.sunshine.app.DetailActivity$DetailFragment">
+    tools:context="com.example.android.sunshine.app.DetailActivity$DetailFragment"
+    android:paddingTop="?android:attr/actionBarSize">
 
 
     <TextView
